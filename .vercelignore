@@ -1,9 +1,15 @@
 # Mirrors .gitignore's excluded paths, since `vercel deploy`'s directory
 # walk does not reliably respect .gitignore itself.
+#
+# scripts/conformance is deliberately NOT excluded even though it's a
+# local-toolchain-only dev script directory: tests/cross-validation.test.ts
+# imports from it, and Next.js's build type-checks every .ts file in the
+# project (not just what next build actually bundles), so excluding it
+# broke the Vercel build with unresolvable-import errors - verified
+# directly by a real failed deploy, not assumed.
 node_modules
 .next
 out
 vendor
 testbench
 rtl
-scripts/conformance
