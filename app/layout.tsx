@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 const title = "Hart";
 const description =
   "A from-scratch RV32I RISC-V CPU core in Verilog, verified against 42 real official riscv-tests conformance tests, cross-validated against an independent TypeScript model, and visualized live in your browser.";
-const url = "https://hart-rv32i.vercel.app";
+const url = "https://hart-drab.vercel.app";
 
 export const metadata: Metadata = {
   title,

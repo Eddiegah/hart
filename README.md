@@ -6,7 +6,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![Next.js](https://img.shields.io/badge/Next.js-16-black)
 
-**[Live demo](https://hart-rv32i.vercel.app)**
+**[Live demo](https://hart-drab.vercel.app)**
 
 Hart is a from-scratch RV32I RISC-V CPU core, written in Verilog, simulated with Icarus Verilog,
 and verified against **42 real, unmodified test files from the official
@@ -30,7 +30,7 @@ your browser.
 **The centerpiece**: every one of the real `isa/rv32ui/*.S` test files — `add`, `sub`, `sll`,
 `slt`, all the branches, all the loads/stores, `fence_i` (self-modifying code), `ma_data`
 (misaligned access) — passes on the actual Verilog RTL, run through Icarus Verilog. See the live
-[conformance dashboard](https://hart-rv32i.vercel.app/conformance) for the real per-test cycle
+[conformance dashboard](https://hart-drab.vercel.app/conformance) for the real per-test cycle
 counts, each linking back to the real upstream source file.
 
 **A genuine, live cross-check, not a documented claim of equivalence**:
