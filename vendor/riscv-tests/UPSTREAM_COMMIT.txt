@@ -1,0 +1,16 @@
+Vendored from https://github.com/riscv-software-src/riscv-tests
+Commit: 2ebecad997fa58cd9e5724340ba75aa4b59bd1d0
+
+Files included, untouched from upstream:
+  isa/rv32ui/*.S              (42 files - RV32 user-mode integer test wrappers)
+  isa/rv64ui/*.S               (shared test bodies rv32ui includes; 54 files)
+  isa/macros/scalar/test_macros.h   (the real, per-instruction test-vector macros)
+  env/p/link.ld                (from the riscv/riscv-test-env submodule, real and unmodified)
+  LICENSE                      (upstream's own license, BSD-style)
+
+NOT vendored: env/p/riscv_test.h - upstream's pass/fail signaling harness
+requires privileged-mode CSRs/traps/mret that are provably unneeded to test
+RV32I integer instruction correctness (see ../../harness/env/p/riscv_test.h
+and docs/SCOPE.md for the full reasoning). A simplified drop-in replacement
+lives at ../../harness/env/p/riscv_test.h - clearly marked there as this
+project's own work, not upstream content.

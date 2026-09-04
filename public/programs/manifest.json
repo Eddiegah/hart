@@ -1,0 +1,34 @@
+{
+  "programs": [
+    {
+      "id": "factorial",
+      "name": "Factorial (6! = 720)",
+      "description": "Iterative factorial via a software multiply-by-repeated-addition subroutine (JAL/JALR) - base RV32I has no hardware multiply.",
+      "hexFile": "/programs/factorial.hex",
+      "tohostAddr": 2147487744,
+      "resultAddr": 2147491840,
+      "resultLabel": "result",
+      "expected": 720
+    },
+    {
+      "id": "gcd",
+      "name": "GCD (48, 18 = 6)",
+      "description": "Euclid's algorithm, with the modulo step computed by repeated subtraction - base RV32I has no hardware divide/remainder.",
+      "hexFile": "/programs/gcd.hex",
+      "tohostAddr": 2147487744,
+      "resultAddr": 2147491840,
+      "resultLabel": "result",
+      "expected": 6
+    },
+    {
+      "id": "bubble_sort",
+      "name": "Bubble sort [5,3,8,1,9,2]",
+      "description": "Sorts a 6-element in-memory array - loads, stores, and branches over the array bounds.",
+      "hexFile": "/programs/bubble_sort.hex",
+      "tohostAddr": 2147487744,
+      "resultAddr": 2147491840,
+      "resultLabel": "array[0..5]",
+      "expectedArray": [1, 2, 3, 5, 8, 9]
+    }
+  ]
+}

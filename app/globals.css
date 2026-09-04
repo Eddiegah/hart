@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+/* "Phosphor" - a dark PCB/oscilloscope aesthetic: near-black board with a
+   bright phosphor-green trace accent, distinct from this portfolio's other
+   palettes (Fundus amber, Murmur blue-violet, Vigil cyan, Harbinger teal,
+   Systole coral, Flux space-blue, Firebrand ember-orange). Fits the
+   "watching real signals on real hardware" theme directly. */
+:root {
+  --background: #070a08;
+  --surface: #0e1512;
+  --surface-2: #151f1a;
+  --glass: color-mix(in srgb, #151f1a 55%, transparent);
+  --foreground: #e7fbf0;
+  --muted: #7fa392;
+  --border: #1e2c25;
+  --border-strong: #2c4237;
+  --accent: #39ff88;
+  --accent-2: #ffb454;
+  --accent-foreground: #04120a;
+  --trace: #39ff88;
+  --glow-color: var(--accent);
+
+  /* Instruction-field segment colors, for the immediate-assembly animation. */
+  --seg-opcode: #7fa392;
+  --seg-rd: #ffb454;
+  --seg-funct3: #ff6b9d;
+  --seg-rs1: #5ac8fa;
+  --seg-rs2: #9d7bff;
+  --seg-funct7: #ff8a5c;
+  --seg-imm: #39ff88;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-glass: var(--glass);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-accent-foreground: var(--accent-foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background:
+    radial-gradient(60rem 34rem at 16% -10%, color-mix(in srgb, var(--accent) 10%, transparent), transparent),
+    radial-gradient(50rem 30rem at 90% 6%, color-mix(in srgb, var(--accent-2) 8%, transparent), transparent),
+    radial-gradient(90rem 60rem at 50% 115%, color-mix(in srgb, #000 45%, transparent), transparent),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+/* Faint PCB grid/trace texture. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.25;
+  background-image:
+    repeating-linear-gradient(0deg, transparent 0, transparent 39px, color-mix(in srgb, var(--trace) 4%, transparent) 40px),
+    repeating-linear-gradient(90deg, transparent 0, transparent 39px, color-mix(in srgb, var(--trace) 4%, transparent) 40px);
+}
+
+.glass-panel {
+  background: var(--glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow:
+    0 1px 0 0 color-mix(in srgb, var(--foreground) 4%, transparent) inset,
+    0 20px 50px -20px rgba(0, 0, 0, 0.6);
+}
+
+.mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+.btn-press {
+  transition:
+    transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.15s ease,
+    border-color 0.15s ease,
+    background-color 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.btn-press:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.btn-press:active:not(:disabled) {
+  transform: translateY(0) scale(0.97);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.card-in {
+  animation: card-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: var(--card-delay, 0ms);
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--glow-color) 55%, transparent); }
+  50% { box-shadow: 0 0 0 14px color-mix(in srgb, var(--glow-color) 0%, transparent); }
+}
+.glow-pulse {
+  animation: glow-pulse 2.2s ease-out infinite;
+}
+
+@keyframes trace-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+.trace-pulse {
+  animation: trace-pulse 1.1s ease-in-out infinite;
+}

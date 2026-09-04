@@ -1,0 +1,9 @@
+# Mirrors .gitignore's excluded paths, since `vercel deploy`'s directory
+# walk does not reliably respect .gitignore itself.
+node_modules
+.next
+out
+vendor
+testbench
+rtl
+scripts/conformance

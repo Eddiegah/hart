@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-09-04T09:26:22.566Z",
+  "toolchainVersion": "riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) 15.2.0",
+  "programs": [
+    {
+      "name": "bubble_sort",
+      "tohostAddr": 2147487744,
+      "hexFile": "build/programs/bubble_sort.hex",
+      "symbols": {
+        "array": 2147491840
+      }
+    },
+    {
+      "name": "factorial",
+      "tohostAddr": 2147487744,
+      "hexFile": "build/programs/factorial.hex",
+      "symbols": {
+        "result": 2147491840
+      }
+    },
+    {
+      "name": "gcd",
+      "tohostAddr": 2147487744,
+      "hexFile": "build/programs/gcd.hex",
+      "symbols": {
+        "result": 2147491840
+      }
+    },
+    {
+      "name": "smoke_sum",
+      "tohostAddr": 2147487744,
+      "hexFile": "build/programs/smoke_sum.hex",
+      "symbols": {
+        "result": 2147491840
+      }
+    }
+  ]
+}

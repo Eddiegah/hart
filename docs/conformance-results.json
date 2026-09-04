@@ -1,0 +1,344 @@
+{
+  "generatedAt": "2026-09-04T09:21:02.928Z",
+  "toolchainVersion": "riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) 15.2.0",
+  "totalPassed": 42,
+  "totalTests": 42,
+  "tests": [
+    {
+      "name": "add",
+      "pass": true,
+      "timeout": false,
+      "cycles": 429,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/add.S"
+    },
+    {
+      "name": "addi",
+      "pass": true,
+      "timeout": false,
+      "cycles": 206,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/addi.S"
+    },
+    {
+      "name": "and",
+      "pass": true,
+      "timeout": false,
+      "cycles": 449,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/and.S"
+    },
+    {
+      "name": "andi",
+      "pass": true,
+      "timeout": false,
+      "cycles": 162,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/andi.S"
+    },
+    {
+      "name": "auipc",
+      "pass": true,
+      "timeout": false,
+      "cycles": 23,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/auipc.S"
+    },
+    {
+      "name": "beq",
+      "pass": true,
+      "timeout": false,
+      "cycles": 255,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/beq.S"
+    },
+    {
+      "name": "bge",
+      "pass": true,
+      "timeout": false,
+      "cycles": 273,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/bge.S"
+    },
+    {
+      "name": "bgeu",
+      "pass": true,
+      "timeout": false,
+      "cycles": 298,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/bgeu.S"
+    },
+    {
+      "name": "blt",
+      "pass": true,
+      "timeout": false,
+      "cycles": 255,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/blt.S"
+    },
+    {
+      "name": "bltu",
+      "pass": true,
+      "timeout": false,
+      "cycles": 280,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/bltu.S"
+    },
+    {
+      "name": "bne",
+      "pass": true,
+      "timeout": false,
+      "cycles": 255,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/bne.S"
+    },
+    {
+      "name": "fence_i",
+      "pass": true,
+      "timeout": false,
+      "cycles": 30,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/fence_i.S"
+    },
+    {
+      "name": "jal",
+      "pass": true,
+      "timeout": false,
+      "cycles": 19,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/jal.S"
+    },
+    {
+      "name": "jalr",
+      "pass": true,
+      "timeout": false,
+      "cycles": 79,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/jalr.S"
+    },
+    {
+      "name": "lb",
+      "pass": true,
+      "timeout": false,
+      "cycles": 217,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/lb.S"
+    },
+    {
+      "name": "lbu",
+      "pass": true,
+      "timeout": false,
+      "cycles": 217,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/lbu.S"
+    },
+    {
+      "name": "ld_st",
+      "pass": true,
+      "timeout": false,
+      "cycles": 927,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/ld_st.S"
+    },
+    {
+      "name": "lh",
+      "pass": true,
+      "timeout": false,
+      "cycles": 233,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/lh.S"
+    },
+    {
+      "name": "lhu",
+      "pass": true,
+      "timeout": false,
+      "cycles": 242,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/lhu.S"
+    },
+    {
+      "name": "lui",
+      "pass": true,
+      "timeout": false,
+      "cycles": 29,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/lui.S"
+    },
+    {
+      "name": "lw",
+      "pass": true,
+      "timeout": false,
+      "cycles": 247,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/lw.S"
+    },
+    {
+      "name": "ma_data",
+      "pass": true,
+      "timeout": false,
+      "cycles": 344,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/ma_data.S"
+    },
+    {
+      "name": "or",
+      "pass": true,
+      "timeout": false,
+      "cycles": 452,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/or.S"
+    },
+    {
+      "name": "ori",
+      "pass": true,
+      "timeout": false,
+      "cycles": 169,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/ori.S"
+    },
+    {
+      "name": "sb",
+      "pass": true,
+      "timeout": false,
+      "cycles": 418,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/sb.S"
+    },
+    {
+      "name": "sh",
+      "pass": true,
+      "timeout": false,
+      "cycles": 471,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/sh.S"
+    },
+    {
+      "name": "simple",
+      "pass": true,
+      "timeout": false,
+      "cycles": 5,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/simple.S"
+    },
+    {
+      "name": "sll",
+      "pass": true,
+      "timeout": false,
+      "cycles": 457,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/sll.S"
+    },
+    {
+      "name": "slli",
+      "pass": true,
+      "timeout": false,
+      "cycles": 205,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/slli.S"
+    },
+    {
+      "name": "slt",
+      "pass": true,
+      "timeout": false,
+      "cycles": 423,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/slt.S"
+    },
+    {
+      "name": "slti",
+      "pass": true,
+      "timeout": false,
+      "cycles": 201,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/slti.S"
+    },
+    {
+      "name": "sltiu",
+      "pass": true,
+      "timeout": false,
+      "cycles": 201,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/sltiu.S"
+    },
+    {
+      "name": "sltu",
+      "pass": true,
+      "timeout": false,
+      "cycles": 423,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/sltu.S"
+    },
+    {
+      "name": "sra",
+      "pass": true,
+      "timeout": false,
+      "cycles": 476,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/sra.S"
+    },
+    {
+      "name": "srai",
+      "pass": true,
+      "timeout": false,
+      "cycles": 220,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/srai.S"
+    },
+    {
+      "name": "srl",
+      "pass": true,
+      "timeout": false,
+      "cycles": 470,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/srl.S"
+    },
+    {
+      "name": "srli",
+      "pass": true,
+      "timeout": false,
+      "cycles": 214,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/srli.S"
+    },
+    {
+      "name": "st_ld",
+      "pass": true,
+      "timeout": false,
+      "cycles": 447,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/st_ld.S"
+    },
+    {
+      "name": "sub",
+      "pass": true,
+      "timeout": false,
+      "cycles": 421,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/sub.S"
+    },
+    {
+      "name": "sw",
+      "pass": true,
+      "timeout": false,
+      "cycles": 478,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/sw.S"
+    },
+    {
+      "name": "xor",
+      "pass": true,
+      "timeout": false,
+      "cycles": 451,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/xor.S"
+    },
+    {
+      "name": "xori",
+      "pass": true,
+      "timeout": false,
+      "cycles": 171,
+      "testnum": null,
+      "upstreamPath": "https://github.com/riscv-software-src/riscv-tests/blob/2ebecad997fa58cd9e5724340ba75aa4b59bd1d0/isa/rv32ui/xori.S"
+    }
+  ]
+}
